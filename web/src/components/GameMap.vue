@@ -6,7 +6,7 @@
 
 <script>
 import { GameMap } from '@/assets/scripts/GameMap';
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 
 export default {
     setup() {
@@ -29,5 +29,8 @@ export default {
 div.gamemap {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
