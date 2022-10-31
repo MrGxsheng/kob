@@ -4,8 +4,17 @@ import RecordIndexView from '../views/record/RecordIndexView'
 import RankListIndexView from '../views/ranklist/RankListIndexView'
 import NotFound from '../views/error/NotFoundView'
 import UserBotIndexView from '../views/user/bot/UserBotIndexView'
+import UserAccountLoginView from '../views/user/account/UserAccountLoginView'
+import UserAccountRegisterView from '../views/user/account/UserAccountRegisterView'
+
 
 const routes = [
+  {
+    path: "/",
+    name: "home",
+    redirect: "/pk/"
+  },
+  
   {
     // 相对路径
     path: "/pk/",
@@ -32,6 +41,20 @@ const routes = [
     path: "/user/bot/",
     name: "user_bot_index",
     component: UserBotIndexView, 
+  },
+
+  {
+    // 相对路径
+    path: "/user/account/login/",
+    name: "user_account_login",
+    component: UserAccountLoginView, 
+  },
+
+  {
+    // 相对路径
+    path: "/user/account/register/",
+    name: "user_account_register",
+    component: UserAccountRegisterView, 
   },
 
   {
